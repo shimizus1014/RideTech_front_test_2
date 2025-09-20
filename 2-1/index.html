@@ -1,1 +1,31 @@
-<!-- この下に記載 -->
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8"/>
+	<title>css-test2-1</title>
+	<link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <h1>content-box border-box 比較</h1>
+	<div class="sample content-box">
+		<h2>外寸が変わる箱（content-box）</h2>
+    </div>
+	<p>中の余白等を指定した値の通りに設定できるが、全体の大きさに影響が出てしまう</p>
+	<p>※全体幅=width+padding+borderとなる（加算される）</p>
+	
+	<div class="sample border-box">
+		<h2>外寸が一定の箱（border-box）</h2>
+    </div>	
+	<p>全体の大きさを決めてその中で余白等が指定されるため、レイアウト指定がしやすい</p>
+	<p>※全体幅=width-(padding+border)→を含めた幅となる</p>
+
+	<h1>表示方法の違い</h1>
+	<div class="block">Block　要素（行全体を占有するため次の要素を改行する）</div>
+	<span class="inline">inline　要素（テキストと同列。サイズの設定不可）</span>
+	<div class="inline-block">横並びでblock要素を併せ持つ。サイズの指定可</div>
+    <span>sample</span>
+</body>
+
+</html>

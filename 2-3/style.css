@@ -1,1 +1,12 @@
 /* ここに記載 */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:1rem;  
+}
+
+.card{
+    padding:1rem;
+    border:10px solid black;
+    background-color:aqua;
+}

@@ -1,1 +1,38 @@
 /* ここに記載 */
+.sample{
+    width: 500px;
+    padding: 0.5rem 1rem;
+    border:2px solid black;
+}
+
+.content-box{
+    box-sizing:content-box;
+    background-color:aqua;
+}
+
+.border-box{
+    box-sizing:border-box;
+    background-color:chartreuse;
+}
+
+.block{
+    display:block; 
+    border:2px solid black;
+    padding:10px 10px;
+    background-color:burlywood;
+    margin: 3rem 0;
+}
+
+.inline{
+    display:inline;
+    border:2px solid black;
+    background-color:burlywood;
+    margin: 1rem 0;
+}
+
+.inline-block{
+    display:inline-block;
+    border:2px solid black;
+    height:50px; 
+    background-color:aqua;   
+}
